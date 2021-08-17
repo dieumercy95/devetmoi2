@@ -1,0 +1,24 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0; /* ne laisse aucune marge */
+}
+
+/* Header */ 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 80px; /* hauteur du logo */
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* supprime les 2 points */
+}
+
+nav li {
+    margin:0 10px 0 20px ; /* 4 valeur 1er( au dessus ) 2eme ( à droite ) 3eme (en dessous ) et à gauche */
+}
