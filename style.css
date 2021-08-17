@@ -60,3 +60,42 @@ h1 {
     font-size: 26px; /* reduit la taille */
 }
 
+/* Presentaion */
+
+#presentation /* tout le bloc */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* on a choisit cela parceque la lageur enfant de 700px prenait le dessus */
+    text-align: center; /* centre tout le contenu */
+} 
+
+
+#presentaion-description {
+    margin: 30px 0; /* 1er valeur (dessus et dessous) 2e (gauche et droit ) */
+    max-width: 700px;
+}
+
+#information {
+    max-width: 700px; 
+    display: flex;
+}
+
+#information article {
+    padding: 10px; /* espace entre les article */
+}
+
+#information h2 {
+    font-weight: 400; /* affine la grosseur */
+    text-transform: uppercase;
+    font-size:18px ;
+}
+
+#information p {
+    font-size: 12px;
+}    
+
+#quote {
+    max-width: 600px; /* réduit en place */
+    margin-top: 40px; /* marge du haut */
+}
