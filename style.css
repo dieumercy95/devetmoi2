@@ -3,7 +3,7 @@ body {
   margin: 0; /* ne laisse aucune marge */
 }
 
-/* Header */ 
+/* Header */
 
 nav {
   display: flex;
@@ -21,7 +21,7 @@ nav ul {
 }
 
 nav li {
-    margin:0 10px 0 20px ; /* 4 valeur 1er( au dessus ) 2eme ( à droite ) 3eme (en dessous ) et à gauche */
+  margin: 0 10px 0 20px; /* 4 valeur 1er( au dessus ) 2eme ( à droite ) 3eme (en dessous ) et à gauche */
 }
 
 /* Main */
@@ -29,73 +29,118 @@ nav li {
 /* Banner */
 
 #banner {
-    position: relative; /* Pour le positionner dans le parent */
+  position: relative; /* Pour le positionner dans le parent */
 }
 
 #banner-img {
-    width: 100%; /* la largeur ne doit jamais scroller */
-    height: 450px;
-    object-fit: cover; /* cela permet de ne pas déformer l'image */
+  width: 100%; /* la largeur ne doit jamais scroller */
+  height: 450px;
+  object-fit: cover; /* cela permet de ne pas déformer l'image */
 }
 
 #banner-content {
-    position: absolute;
-    top: 0; /* position en haut */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  position: absolute;
+  top: 0; /* position en haut */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #banner-content img {
-    height: 60px;
+  height: 60px;
 }
 
 h1 {
-    color: white;
-    font-weight: 400; /* affine la grosseur */
-    font-size: 26px; /* reduit la taille */
+  color: white;
+  font-weight: 400; /* affine la grosseur */
+  font-size: 26px; /* reduit la taille */
 }
 
 /* Presentaion */
 
 #presentation /* tout le bloc */ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* on a choisit cela parceque la lageur enfant de 700px prenait le dessus */
-    text-align: center; /* centre tout le contenu */
-} 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* on a choisit cela parceque la lageur enfant de 700px prenait le dessus */
+  text-align: center; /* centre tout le contenu */
+}
 
-
-#presentaion-description {
-    margin: 30px 0; /* 1er valeur (dessus et dessous) 2e (gauche et droit ) */
-    max-width: 700px;
+#presentation-description {
+  margin: 30px 0; /* 1er valeur (dessus et dessous) 2e (gauche et droit ) */
+  max-width: 700px;
 }
 
 #information {
-    max-width: 700px; 
-    display: flex;
+  max-width: 700px;
+  display: flex;
 }
 
 #information article {
-    padding: 10px; /* espace entre les article */
+  padding: 10px; /* espace entre les article */
 }
 
 #information h2 {
-    font-weight: 400; /* affine la grosseur */
-    text-transform: uppercase;
-    font-size:18px ;
+  font-weight: 400; /* affine la grosseur */
+  text-transform: uppercase; /* transform en majuscule */
+  font-size: 18px;
 }
 
 #information p {
-    font-size: 12px;
-}    
+  font-size: 12px;
+}
 
 #quote {
-    max-width: 600px; /* réduit en place */
-    margin-top: 40px; /* marge du haut */
+  max-width: 600px; /* réduit en place */
+  margin-top: 40px; /* marge du haut */
+}
+
+/*Footer*/
+
+footer {
+    background-color: #5b359d;
+    color: white; /*comme sa tout est blanc */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 12px;
+    margin: 20px 0 10px 0;
+}
+
+#footer-social {
+    width: 200px; /* pour les éloignés les un des autres */
+    display: flex;
+    justify-content:space-between ;
+    font-size: 20px; /* on utilise cela pour changer la taille et NON height */
+    opacity: 0.6; /* fait fusionner avec le background */
+}
+
+#footer-items {
+    width: 100%; /* pour que space-around Fonctionne */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20PX; /* marge du haut */
+}
+
+.footer-items h3 {
+    font-size: 14px;
+    font-weight: 400; /* sa les mets en normal */
+    opacity: 0.6;
+}
+
+.footer-items li {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 550px) {
+    #information,
+    #footer-items {
+        flex-direction: column;
+    }
 }
